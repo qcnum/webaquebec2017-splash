@@ -54,5 +54,15 @@ gulp.task('copy:svg:export', function() {
         .pipe(gulp.dest(config.exportPath + 'svg/originals'));
 });
 
-gulp.task('copy', ['copy:js', 'copy:js:templates', 'copy:img', 'copy:svg']);
-gulp.task('copy:export', ['copy:js:export', 'copy:img:export', 'copy:svg:export']);
+gulp.task('copy:cname', function() {
+    return gulp.src(config.src + 'CNAME')
+        .pipe(gulp.dest(config.build));
+});
+
+gulp.task('copy:cname:export', function() {
+    return gulp.src(config.src + 'CNAME')
+        .pipe(gulp.dest(config.exportPath));
+});
+
+gulp.task('copy', ['copy:js', 'copy:js:templates', 'copy:img', 'copy:svg', 'copy:cname']);
+gulp.task('copy:export', ['copy:js:export', 'copy:img:export', 'copy:svg:export', 'copy:cname:export']);
