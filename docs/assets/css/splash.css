@@ -1,0 +1,285 @@
+.home {
+margin-top: -150px;
+}
+.home .home-wrapper {
+opacity: 1 !important;
+transition: opacity 1s;
+}
+.home .home-wrapper[v-cloak] {
+opacity: 0 !important;
+transition: opacity 1s;
+}
+@media (max-width: 1023px) {
+.home {
+margin-top: 0;
+}
+}
+
+section {
+height: auto;
+margin: 100px 0;
+}
+@media (max-height: 720px) {
+section {
+min-height: 100vh;
+}
+}
+@media (max-width: 1023px) {
+section {
+min-height: 0;
+}
+}
+
+.home-header {
+position: relative;
+margin-top: 0;
+margin-bottom: 0;
+}
+.home-header .content {
+position: relative;
+max-width: 766px;
+min-height: 80vh;
+width: 100%;
+margin: 0 auto;
+height: 100%;
+}
+@media (max-width: 1023px) {
+.home-header .content {
+min-height: 60vh;
+}
+}
+.home-header .logo-wrapper {
+width: 100%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+@media (max-width: 1023px) {
+.home-header .logo-wrapper {
+width: 100%;
+text-align: center;
+}
+}
+.home-header .year-wrapper {
+height: 190px;
+}
+@media (max-width: 1023px) {
+.home-header .year-wrapper {
+height: 18vw;
+}
+}
+@media (max-width: 900px) {
+.home-header .year-wrapper {
+height: 20vw;
+}
+}
+.home-header .year-wrapper .logo {
+height: 100%;
+}
+.home-header .year-wrapper .year {
+font-size: 18.2rem;
+line-height: 1rem;
+font-weight: 600;
+color: #00ffb9;
+}
+@media (max-width: 1023px) {
+.home-header .year-wrapper .year {
+font-size: 28vw;
+}
+}
+@media (max-width: 900px) {
+.home-header .year-wrapper .year {
+font-size: 31vw;
+}
+}
+.home-header .tagline {
+font-size: 2.4rem;
+font-weight: bold;
+color: #babcbf;
+display: block;
+max-width: 550px;
+margin-top: 1rem;
+}
+@media (max-width: 1023px) {
+.home-header .tagline {
+font-size: 4vw;
+text-align: left;
+max-width: 73vw;
+}
+}
+@media (max-width: 900px) {
+.home-header .tagline {
+max-width: 81vw;
+padding-right: 20px;
+}
+}
+@media (max-width: 1023px) {
+.home-header .tagline {
+margin: 1rem auto 0 auto;
+}
+}
+.home-header .presented-by {
+font-size: 1.9rem;
+font-weight: 600;
+color: #000ca0;
+position: absolute;
+bottom: 100%;
+left: 0;
+margin-bottom: 10px;
+}
+.home-header .infos,
+.home-header .infos-mobile {
+position: absolute;
+bottom: 0;
+font-size: 1.5rem;
+}
+@media (max-width: 1023px) {
+.home-header .infos,
+.home-header .infos-mobile {
+display: none;
+}
+}
+.home-header .infos > span,
+.home-header .infos-mobile > span {
+display: block;
+position: relative;
+color: #000ca0;
+font-size: 1.875rem;
+line-height: 1.2;
+}
+.home-header .infos > span span.label,
+.home-header .infos-mobile > span span.label {
+position: absolute;
+text-align: right;
+width: 85px;
+left: -115px;
+font-size: 0.8em;
+top: 50%;
+transform: translateY(-50%);
+color: #babcbf;
+}
+.home-header .infos-mobile {
+display: none;
+text-align: left;
+margin: 5px auto 0;
+}
+@media (max-width: 1023px) {
+.home-header .infos-mobile {
+display: block;
+position: static;
+max-width: 73vw;
+}
+}
+@media (max-width: 900px) {
+.home-header .infos-mobile {
+max-width: 81vw;
+}
+}
+.home-header .infos-mobile > span {
+position: static;
+font-size: 1.3rem;
+}
+.home-header .infos-mobile > span span.label {
+position: static;
+margin-right: 10px;
+}
+.home-header .confetti-bg,
+.home-header .confetti-bg-mobile {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 1;
+transition: opacity 1s;
+}
+@media (max-width: 700px) {
+.home-header .confetti-bg,
+.home-header .confetti-bg-mobile {
+opacity: 0;
+transition: opacity 1s;
+}
+}
+.home-header .confetti-bg .confetti,
+.home-header .confetti-bg-mobile .confetti {
+position: absolute;
+top: 50%;
+left: 20px;
+width: 100px;
+height: 20px;
+background-color: #000ca0;
+-ms-transform: skew(-35deg);
+transform: skew(-35deg);
+}
+@media (max-width: 700px) {
+.home-header .confetti-bg .confetti,
+.home-header .confetti-bg-mobile .confetti {
+height: 10px;
+}
+}
+.home-header .confetti-bg .confetti.c-color1,
+.home-header .confetti-bg-mobile .confetti.c-color1 {
+background-color: #000ca0;
+}
+.home-header .confetti-bg .confetti.c-color2,
+.home-header .confetti-bg-mobile .confetti.c-color2 {
+background-color: #00ffb9;
+}
+.home-header .confetti-bg .confetti.c-color3,
+.home-header .confetti-bg-mobile .confetti.c-color3 {
+background-color: #f9eb46;
+}
+.home-header .confetti-bg .confetti.c-color4,
+.home-header .confetti-bg-mobile .confetti.c-color4 {
+background-color: #ebebeb;
+}
+.home-header .confetti-bg-mobile {
+opacity: 0;
+transition: opacity 1s;
+}
+@media (max-width: 700px) {
+.home-header .confetti-bg-mobile {
+opacity: 1;
+transition: opacity 1s;
+}
+}
+
+
+.buttons{
+    height: auto;
+    min-height: 200px;
+    padding: 20px;
+    text-align: center;
+}
+
+button,
+.btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000ca0;
+  padding: 5px 30px;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+  text-decoration: none;
+  margin: 10px 5px;
+  line-height: 1.5rem;
+  display: inline-block;
+}
+button:after,
+.btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  width: 100%;
+  height: 100%;
+  -ms-transform: skew(-35deg);
+  transform: skew(-35deg) translateY(-50%);
+  z-index: -1;
+  border: 3px solid #000ca0;
+}
