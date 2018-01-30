@@ -65,13 +65,7 @@ p {
 }
 
 .views-wrapper {
-  margin-top: 150px;
   position: relative;
-}
-@media (max-width: 1023px) {
-  .views-wrapper {
-    margin-top: 50px;
-  }
 }
 
 .views-wrapper > div {
